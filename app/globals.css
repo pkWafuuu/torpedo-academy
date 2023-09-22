@@ -31,9 +31,17 @@ p {
   @apply flex items-center justify-center
 }
 
+.styled__button {
+  @apply py-2 px-4 bg-[#000] rounded
+}
+
+.title {
+  @apply text-[50px] md:text-[70px] leading-none text-center md:text-left
+}
+
 /* NAV BAR */
 
 .nav__link {
-  @apply mr-4
+  @apply mx-4
 }
 

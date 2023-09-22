@@ -5,10 +5,10 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <nav className="h-28 flex-center bg-[#0d3e84] text-white">
+    <nav className=" w-full h-28 flex-center bg-[#0d3e84] text-white">
       <div className="row flex justify-between">
         <Image src={logo} objectFit="cover" alt="" className="w-[170px]" />
-        <ul className="hidden md:flex md:items-center">
+        <ul className="hidden bg-[#ffffff46] rounded-[25px] my-2 px-10 md:flex md:items-center">
           <li className="nav__link">
             <Link href="/">Home</Link>
           </li>
