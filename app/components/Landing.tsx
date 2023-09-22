@@ -1,16 +1,16 @@
 import Image from 'next/image'
 import React from 'react'
-import landing from '../../public/gallery/landing.png'
+import landing from '../../public/gallery/landing-dots.png'
 
 export default function Landing() {
   return (
-    <section className='bg-[#0d3e84] h-[calc(100vh)]'>
+    <section className='bg-[#0d3e84] h-[calc(100vh-112px)]'>
         <div className="row flex-center h-full flex-col text-center md:flex-row md:text-left">
             <div className='text-white md:w-1/2'>
-                <div>Swimming Made Simple</div>
-                <h1 className='title'>learn to swim with torpedo</h1>
-                <h2 className='uppercase'>Book a Free Assessment</h2>
-                <button className='styled__button'>CONTACT US</button>
+                <div className='uppercase text-[16px] md:text-[24px]'>Swimming Made Simple</div>
+                <h1 className='title mt-4'>learn to swim with torpedo</h1>
+                <h2 className='uppercase mt-4'>Book a Free Assessment</h2>
+                <button className='styled__button mt-1'>CONTACT US</button>
             </div>
             <Image 
               src={landing}

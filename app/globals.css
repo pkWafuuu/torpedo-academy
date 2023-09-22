@@ -32,7 +32,7 @@ p {
 }
 
 .styled__button {
-  @apply py-2 px-4 bg-[#000] rounded
+  @apply py-4 px-8 bg-[#000] rounded
 }
 
 .title {
