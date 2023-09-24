@@ -23,6 +23,10 @@ p {
   @apply text-sm md:text-base
 }
 
+.container {
+  @apply py-10 w-full
+}
+
 .row {
   @apply max-w-6xl mx-auto w-full px-8
 }
