@@ -67,3 +67,7 @@ p {
 .overlay:hover {
   opacity: 1;
 }
+
+.carousel-btn {
+  @apply bg-[#fff] rounded-full p-2 shadow-xl flex items-center justify-center border 
+}

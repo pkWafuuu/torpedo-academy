@@ -7,15 +7,19 @@ import babyclass from "../../public/gallery/babyclass.png"
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import Slider from 'react-slick'
+import Nextarrow from "../ui/Nextarrow";
+import Prevarrow from "../ui/Prevarrow";
 
 export default class HomePrograms extends Component {
     render(){
     const settings = {
-        dots: true,
+        // dots: true,
         infinite: true,
         speed: 500,
         slidesToShow: 3,
         slidesToScroll: 1,
+        nextArrow: <Nextarrow />,
+        prevArrow: <Prevarrow/>,
         responsive: [
             {
               breakpoint: 1024,
@@ -47,7 +51,7 @@ export default class HomePrograms extends Component {
   return (
     <div className="row py-10 text-center">
       <h1>Programs</h1>
-      <Slider {...settings}>
+      <Slider {...settings} className="relative">
       {/* <div className="flex flex-wrap"> */}
         <Program pic={privateclass} title="Private Class" text="lorem ipsum gypsum burger mac and burger meal plus spaghetti meatballs" />
         <Program pic={groupclass} title="Group Class" text="description" />

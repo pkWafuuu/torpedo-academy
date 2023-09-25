@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 export default function Program({ pic, title, text }: any) {
@@ -14,7 +15,10 @@ export default function Program({ pic, title, text }: any) {
         <h1>{title}</h1>
         <div className="overlay flex-center flex-col">
             <h1>{title}</h1>
-            <p className="mb-4">{text}</p>
+            <p className="mt-2 px-8">{text}</p>
+            <button className="styled__button">
+                <Link href="/">LEARN MORE</Link>
+            </button>
         </div>
       </div>
     </div>
