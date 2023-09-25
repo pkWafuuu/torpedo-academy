@@ -8,7 +8,7 @@ export default function Landing() {
         <div className="row flex-center h-full flex-col text-center md:flex-row md:text-left">
             <div className='text-white md:w-1/2'>
                 <div className='uppercase text-[16px] md:text-[24px]'>Swimming Made Simple</div>
-                <h1 className='title mt-4'>learn to swim with torpedo</h1>
+                <h1 className='title text-center mt-4 md:text-left'>learn to swim with torpedo</h1>
                 <h2 className='uppercase mt-4'>Book a Free Assessment</h2>
                 <button className='styled__button mt-1'>CONTACT US</button>
             </div>
