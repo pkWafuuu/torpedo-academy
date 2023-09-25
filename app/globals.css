@@ -49,3 +49,21 @@ p {
   @apply mx-4
 }
 
+/* PROGRAMS */
+
+.overlay {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  background-color: #000000be;
+  transition: all 300ms ease;
+  color: #fff;
+  height: 100%;
+  width: 100%;
+}
+
+.overlay:hover {
+  opacity: 1;
+}
