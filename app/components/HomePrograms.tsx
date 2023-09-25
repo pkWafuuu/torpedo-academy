@@ -49,8 +49,8 @@ export default class HomePrograms extends Component {
     };
 
     return (
-      <div className="row py-10 text-center">
-        <h1 className="title text-center">Programs</h1>
+      <div className="row py-14 text-center">
+        <h1 className="section__title text-center mb-4">Programs</h1>
         <Slider {...settings} className="relative">
           {/* <div className="flex flex-wrap"> */}
           <Program
@@ -58,18 +58,21 @@ export default class HomePrograms extends Component {
             title="Private Class"
             text="Personalized one-on-one instruction. Flexible schedules.
             Boost your swimming skills and confidence."
+            btnText="LEARN MORE"
           />
           <Program
             pic={groupclass}
             title="Group Class"
             text="Our Group Swimming Classes emphasize learning together, staying motivated, 
             and receiving top-notch instruction to elevate your swimming prowess."
+            btnText="LEARN MORE"
           />
           <Program
             pic={babyclass}
             title="Baby Class"
             text="Explore water wonders with our tailored Baby Swimming Classes. 
             Our nurturing environment is perfect for your baby's first aquatic journey."
+            btnText="LEARN MORE"
           />
           <Program
             pic={groupclass}
@@ -78,6 +81,7 @@ export default class HomePrograms extends Component {
             for an exhilarating and refreshing approach to fitness. These water-based workouts 
             offer a dynamic and engaging way to stay active while enjoying the benefits of a 
             supportive group environment"
+            btnText="COMING SOON"
           />
           {/* </div> */}
         </Slider>

@@ -20,7 +20,7 @@ h2 {
 }
 
 p {
-  @apply text-sm md:text-base
+  @apply text-base md:text-lg
 }
 
 .container {
@@ -41,6 +41,14 @@ p {
 
 .title {
   @apply text-[50px] md:text-[70px] leading-none
+}
+
+.section__title {
+  @apply text-[32px] md:text-[52px] leading-none
+}
+
+.filter__blue {
+  filter: brightness(0) saturate(100%) invert(15%) sepia(54%) saturate(3581%) hue-rotate(207deg) brightness(91%) contrast(91%);
 }
 
 /* NAV BAR */
