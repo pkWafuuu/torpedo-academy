@@ -51,6 +51,17 @@ p {
   filter: brightness(0) saturate(100%) invert(15%) sepia(54%) saturate(3581%) hue-rotate(207deg) brightness(91%) contrast(91%);
 }
 
+.filter__white {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);}
+
+.social-icon--wrapper {
+  @apply border rounded-full p-2 mx-1
+}
+
+.social-icon {
+  @apply w-4
+}
+
 /* NAV BAR */
 
 .nav__link {

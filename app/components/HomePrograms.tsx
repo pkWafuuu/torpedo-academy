@@ -77,10 +77,9 @@ export default class HomePrograms extends Component {
           <Program
             pic={groupclass}
             title="GX Class"
-            text="GX (Group Exercise) Aquatic Classes 
-            for an exhilarating and refreshing approach to fitness. These water-based workouts 
-            offer a dynamic and engaging way to stay active while enjoying the benefits of a 
-            supportive group environment"
+            text="Experience the refreshing twist on fitness with our GX (Group Exercise) Aquatic Classes. 
+            These water workouts provide a dynamic and engaging way to stay active, all within a supportive 
+            group setting."
             btnText="COMING SOON"
           />
           {/* </div> */}
