@@ -41,7 +41,7 @@ export default function Footer() {
                 </li>
               </ul>
             </div>
-            <h2>Copyright © 2022 - 2023 Torpedo Swimming Academy</h2>
+            <h2 className="text-center">Copyright © 2022 - 2023 Torpedo Swimming Academy</h2>
           </div>
         </div>
       </div>

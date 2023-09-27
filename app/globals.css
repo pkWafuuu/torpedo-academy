@@ -68,6 +68,24 @@ p {
   @apply mx-4
 }
 
+.program__nav--links {
+  visibility: hidden;
+  opacity: 0;
+  width: 160px;
+  transform: translateX(-30px);
+  transition: all 700ms ease;
+}
+
+.program__nav:hover .program__nav--links{
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.program__nav--link {
+  @apply py-1 uppercase transition-all hover:translate-x-2 hover:text-[#fcdd77]
+}
+
 /* PROGRAMS */
 
 .overlay {
@@ -90,3 +108,48 @@ p {
 .carousel-btn {
   @apply bg-[#fff] rounded-full p-2 shadow-xl flex items-center justify-center border 
 }
+
+/* ANIMATIONS */
+
+.ocean { 
+  height: 2%;
+  width:100%;
+  position:absolute;
+  bottom:0;
+  left:0;
+  z-index: 0;
+  background: #015871;
+}
+
+.wave {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) repeat-x; 
+  position: absolute;
+  top: -138px;
+  width: 6400px;
+  height: 138px;
+  animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
+  transform: translate3d(0, 0, 0);
+  z-index: 0;
+}
+
+.wave:nth-of-type(2) {
+  top: -125px;
+  animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite;
+  z-index: 0;
+}
+
+.wave:nth-of-type(3) {
+  top: -130px;
+  animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.155s infinite;
+  z-index: 0;
+}
+
+@keyframes wave {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -1600px;
+  }
+}
+
