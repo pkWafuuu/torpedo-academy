@@ -49,7 +49,7 @@ export default class HomePrograms extends Component {
     };
 
     return (
-      <div className="row py-14 text-center">
+      <div id="programs" className="row py-14 text-center">
         <h1 className="section__title text-center mb-4">Programs</h1>
         <Slider {...settings} className="relative">
           {/* <div className="flex flex-wrap"> */}

@@ -24,11 +24,11 @@ export default function Landing() {
           className="mt-6 md:w-1/2 "
         />
       </div>
-      <div className="ocean">
+      {/* <div className="ocean">
         <div className="wave"></div>
         <div className="wave"></div>
         <div className="wave"></div>
-      </div>
+      </div> */}
     </section>
   );
 }

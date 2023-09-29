@@ -10,11 +10,20 @@ export default function Footer() {
     <footer className="bg-[#111] text-white">
       <div className="row py-14">
         <div className="flex flex-col">
-          <div className="mb-6">
-            <div>
+          <div className="mb-6 flex-center">
               <Image src={logo} objectFit="cover" alt="" className="w-52" />
-            </div>
           </div>
+          <ul className="flex-center mb-4">
+            <li className="footer__link">
+              <Link href="/">Home</Link>
+            </li>
+            <li className="footer__link">
+              <Link href="#programs">Locations</Link>
+            </li>
+            <li className="footer__link">
+              <Link href="#programs">About</Link>
+            </li>
+          </ul>
           <div className="border-b-[1px] border-[#ffffff41] w-full mb-6" />
           <div className="flex-center flex-col">
             <div>
