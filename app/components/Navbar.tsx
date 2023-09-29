@@ -1,28 +1,29 @@
-"use client"
+"use client";
 import Image from "next/image";
 import React from "react";
 import logo from "../../public/icons/logo-horizontal-white.png";
 import circleLogo from "../../public/icons/logo-circle.png";
 import burger from "../../public/icons/burger.svg";
-import exit from "../../public/icons/cross.svg"
+import exit from "../../public/icons/cross.svg";
 import Link from "next/link";
 
 export default function Navbar() {
-
-  function openBurger(){
-    let burg = document.querySelector('.burger')
-    burg?.classList.add("burger--open")
+  function openBurger() {
+    let burg = document.querySelector(".burger");
+    burg?.classList.add("burger--open");
   }
 
-  function closeBurger(){
-    let burg = document.querySelector('.burger')
-    burg?.classList.remove("burger--open")
+  function closeBurger() {
+    let burg = document.querySelector(".burger");
+    burg?.classList.remove("burger--open");
   }
 
   return (
     <nav className="absolute top-0 left-0 z-10 w-full h-28 flex-center text-white">
       <div className="row flex justify-between">
-        <Image src={logo} objectFit="cover" alt="" className="w-[170px]" />
+        <Link href="/">
+          <Image src={logo} objectFit="cover" alt="" className="w-[170px]" />
+        </Link>
         <ul className="hidden bg-[#ffffff46] rounded-[25px] my-2 px-10 md:flex md:items-center">
           <li className="nav__link">
             <Link href="/">Home</Link>
@@ -78,16 +79,24 @@ export default function Navbar() {
               className="mt-4 ml-4 mb-4"
             />
             <li className="program__nav--link-burger">
-              <Link href="/programs/privateclass">Home</Link>
+              <Link href="/" onClick={closeBurger}>
+                Home
+              </Link>
             </li>
             <li className="program__nav--link-burger">
-              <Link href="/programs/groupclass">Programs</Link>
+              <Link href="/programs/groupclass" onClick={closeBurger}>
+                Programs
+              </Link>
             </li>
             <li className="program__nav--link-burger">
-              <Link href="/programs/babyclass">Locations</Link>
+              <Link href="/programs/babyclass" onClick={closeBurger}>
+                Locations
+              </Link>
             </li>
             <li className="program__nav--link-burger">
-              <Link href="/programs/gxclass">About Us</Link>
+              <Link href="/programs/gxclass" onClick={closeBurger}>
+                About Us
+              </Link>
             </li>
           </ul>
         </div>
