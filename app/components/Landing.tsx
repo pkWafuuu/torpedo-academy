@@ -14,7 +14,9 @@ export default function Landing() {
             learn to swim with torpedo
           </h1>
           <h2 className="uppercase mt-4">Book a Free Assessment</h2>
-          <button className="styled__button mt-1">CONTACT US</button>
+          <button className="styled__button mt-1">
+            CONTACT US
+          </button>
         </div>
         <Image
           src={landing}
