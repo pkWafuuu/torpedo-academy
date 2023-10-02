@@ -59,6 +59,7 @@ export default class HomePrograms extends Component {
             text="Personalized one-on-one instruction. Flexible schedules.
             Boost your swimming skills and confidence."
             btnText="LEARN MORE"
+            link="/programs/privateclass"
           />
           <Program
             pic={groupclass}
@@ -66,6 +67,7 @@ export default class HomePrograms extends Component {
             text="Our Group Swimming Classes emphasize learning together, staying motivated, 
             and receiving top-notch instruction to elevate your swimming prowess."
             btnText="LEARN MORE"
+            link="/programs/groupclass"
           />
           <Program
             pic={babyclass}
@@ -73,6 +75,7 @@ export default class HomePrograms extends Component {
             text="Explore water wonders with our tailored Baby Swimming Classes. 
             Our nurturing environment is perfect for your baby's first aquatic journey."
             btnText="LEARN MORE"
+            link="/programs/babyclass"
           />
           <Program
             pic={groupclass}
@@ -81,6 +84,7 @@ export default class HomePrograms extends Component {
             These water workouts provide a dynamic and engaging way to stay active, all within a supportive 
             group setting."
             btnText="COMING SOON"
+            link="/programs/gxclass"
           />
           {/* </div> */}
         </Slider>

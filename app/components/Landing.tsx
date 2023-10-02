@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import landing from "../../public/gallery/landing-dots.png";
+import Link from "next/link";
 
 export default function Landing() {
   return (
@@ -14,9 +15,14 @@ export default function Landing() {
             learn to swim with torpedo
           </h1>
           <h2 className="uppercase mt-4">Book a Free Assessment</h2>
-          <button className="styled__button mt-1">
-            CONTACT US
-          </button>
+          <Link
+            href="https://wa.me/971586671868"
+            target="blank"
+            rel="noopener noreferrer"
+            passHref={true}
+          >
+            <button className="styled__button mt-1">CONTACT US</button>
+          </Link>
         </div>
         <Image
           src={landing}

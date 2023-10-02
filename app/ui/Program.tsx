@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-export default function Program({ pic, title, text, btnText }: any) {
+export default function Program({ pic, title, text, btnText, link }: any) {
   return (
     <div className="rounded p-2">
       <div className="rounded h-full shadow-xl pb-4 relative">
@@ -17,7 +17,7 @@ export default function Program({ pic, title, text, btnText }: any) {
             <h1>{title}</h1>
             <p className="mt-2 px-6">{text}</p>
             <button className="styled__button mt-2">
-                <Link href="/">{btnText}</Link>
+                <Link href={link}>{btnText}</Link>
             </button>
         </div>
       </div>
