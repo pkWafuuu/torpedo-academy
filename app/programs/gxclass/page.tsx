@@ -1,6 +1,11 @@
 import React from "react";
-import lightbulb from "../../../public/icons/lightbulb.svg";
 import ProgramDetail from "@/app/ui/ProgramDetail";
+import lightbulb from "../../../public/icons/lightbulb.svg";
+import person from "../../../public/icons/person-arms-up.svg";
+import gear from "../../../public/icons/gear.svg";
+import heartpulse from "../../../public/icons/heart-pulse.svg";
+import shield from "../../../public/icons/shield-check.svg";
+import alarm from "../../../public/icons/alarm.svg";
 
 export default function GxClass() {
   return (
@@ -10,7 +15,7 @@ export default function GxClass() {
           Group Exercise class
         </h1>
       </section>
-      <div className="container">
+      <div className="cuscontainer">
         <div className="row text-center">
           <p className="mb-4 md:px-10">
             Dive into the refreshing world of fitness with GX Aquatic Classes!
@@ -19,7 +24,7 @@ export default function GxClass() {
           </p>
           <div className="flex flex-wrap">
             <ProgramDetail
-              icon={lightbulb}
+              icon={heartpulse}
               title="Intensity"
               para="Experience a full-body workout that is gentle on the joints while still delivering an intense and effective exercise session"
             />
@@ -29,22 +34,22 @@ export default function GxClass() {
               para="The soothing properties of water provide a calming environment, reducing stress and promoting relaxation"
             />
             <ProgramDetail
-              icon={lightbulb}
+              icon={gear}
               title="Suitable "
               para="Regardless of age, fitness level, or physical condition, We offer a welcoming space for everyone to improve their health and fitness"
             />
             <ProgramDetail
-              icon={lightbulb}
+              icon={alarm}
               title="Improved Sleep"
               para="Regular aquatic exercise can lead to improved sleep quality, a precious benefit for parents in need of rest"
             />
             <ProgramDetail
-              icon={lightbulb}
+              icon={person}
               title="Community"
               para="Join a supportive community of people who are on a fitness journey, forming connections and friendships with like-minded individuals"
             />
             <ProgramDetail
-              icon={lightbulb}
+              icon={shield}
               title="Low Risk"
               para="The low-impact nature of water workouts reduces the risk of injury, making GX Aquatic Classes suitable for individuals of all fitness levels and ages"
             />

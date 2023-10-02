@@ -1,6 +1,12 @@
 import ProgramDetail from "@/app/ui/ProgramDetail";
 import React from "react";
 import personalize from "../../../public/icons/lightbulb.svg";
+import people from "../../../public/icons/people.svg";
+import balloonheart from "../../../public/icons/balloon-heart.svg";
+import shieldcheck from "../../../public/icons/shield-check.svg";
+import personarmsup from "../../../public/icons/person-arms-up.svg";
+import laugh from "../../../public/icons/emoji-laughing.svg";
+
 
 export default function BabyClass() {
   return (
@@ -8,7 +14,7 @@ export default function BabyClass() {
       <section id="private-class" className="bg-[#0d3e84] h-[50vh] flex-center">
         <h1 className="title text-white mt-20">Baby class</h1>
       </section>
-      <div className="container">
+      <div className="cuscontainer">
         <div className="row text-center">
           <p className="mb-4 md:px-10">
             Introduce your little one to the wonders of the water in our
@@ -18,12 +24,12 @@ export default function BabyClass() {
           </p>
           <div className="flex flex-wrap">
             <ProgramDetail
-              icon={personalize}
+              icon={people}
               title="Bonding "
               para="Enjoy quality bonding time with your baby in the soothing embrace of warm water, creating precious memories together"
             />
             <ProgramDetail
-              icon={personalize}
+              icon={shieldcheck}
               title="Safety"
               para="Learn essential water safety skills tailored to infants, ensuring your baby&apos;s safety around water"
             />
@@ -33,17 +39,17 @@ export default function BabyClass() {
               para="Gain valuable knowledge and techniques from our instructors to continue fostering your baby&apos;s love for the water outside of class"
             />
             <ProgramDetail
-              icon={personalize}
+              icon={laugh}
               title="Aqua Fun"
               para="Watch your baby giggle and delight in the fun water activities specially designed for their age group"
             />
             <ProgramDetail
-              icon={personalize}
+              icon={balloonheart}
               title="Gentle Intro"
               para="Our experienced instructors create a gentle and supportive atmosphere for babies, making their first encounters with water stress-free and enjoyable"
             />
             <ProgramDetail
-              icon={personalize}
+              icon={personarmsup}
               title="Social"
               para="Baby classes provide an opportunity for your little one to interact with other infants, fostering social skills in a fun and relaxed setting"
             />
