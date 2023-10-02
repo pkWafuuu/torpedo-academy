@@ -13,7 +13,7 @@ export default function BabyClass() {
           <p className="mb-4 md:px-10">
             Introduce your little one to the wonders of the water in our
             specially designed Baby Swimming Classes. Our gentle and nurturing
-            environment provides the perfect setting for your baby's first
+            environment provides the perfect setting for your baby&apos;s first
             aquatic adventures
           </p>
           <div className="flex flex-wrap">
@@ -25,12 +25,12 @@ export default function BabyClass() {
             <ProgramDetail
               icon={personalize}
               title="Safety"
-              para="Learn essential water safety skills tailored to infants, ensuring your baby's safety around water"
+              para="Learn essential water safety skills tailored to infants, ensuring your baby&apos;s safety around water"
             />
             <ProgramDetail
               icon={personalize}
               title="Guidance"
-              para="Gain valuable knowledge and techniques from our instructors to continue fostering your baby's love for the water outside of class"
+              para="Gain valuable knowledge and techniques from our instructors to continue fostering your baby&apos;s love for the water outside of class"
             />
             <ProgramDetail
               icon={personalize}
