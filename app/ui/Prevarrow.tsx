@@ -4,11 +4,11 @@ import arrow from '../../public/icons/chevron-left.svg'
 
 export default function Prevarrow({onClick}:any) {
   return (
-    <button onClick={onClick} className='carousel-btn absolute -left-[20px] z-[1] top-[45%] '>
+    <button onClick={onClick} className='carousel-btn absolute -left-[14px] z-[1] top-[45%] '>
         <Image
             src={arrow}
-            height={28}
-            width={28}
+            height={20}
+            width={20}
             alt='prev'
             />
     </button>

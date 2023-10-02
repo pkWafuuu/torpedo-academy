@@ -29,7 +29,7 @@ p {
 }
 
 .row {
-  @apply max-w-6xl mx-auto w-full px-8
+  @apply max-w-6xl mx-auto w-full px-4
 }
 
 .flex-center {
