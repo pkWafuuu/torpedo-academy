@@ -92,7 +92,7 @@ export default function Navbar() {
             >
               PROGRAMS
               {open && (
-                <ul>
+                <ul className="mt-2">
                   <li className="p-1">
                     <Link
                       href="/programs/privateclass"
@@ -104,7 +104,7 @@ export default function Navbar() {
                     </Link>
                   </li>
                   <li className="p-1">
-                  <Link
+                    <Link
                       href="/programs/groupclass"
                       onClick={closeBurger}
                       className="flex"
@@ -114,7 +114,7 @@ export default function Navbar() {
                     </Link>
                   </li>
                   <li className="p-1">
-                  <Link
+                    <Link
                       href="/programs/babyclass"
                       onClick={closeBurger}
                       className="flex"
@@ -124,7 +124,7 @@ export default function Navbar() {
                     </Link>
                   </li>
                   <li className="p-1">
-                  <Link
+                    <Link
                       href="/programs/gxclass"
                       onClick={closeBurger}
                       className="flex"

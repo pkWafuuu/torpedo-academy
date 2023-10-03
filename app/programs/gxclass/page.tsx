@@ -10,7 +10,7 @@ import alarm from "../../../public/icons/alarm.svg";
 export default function GxClass() {
   return (
     <>
-      <section id="private-class" className="bg-[#0d3e84] h-[50vh] flex-center">
+      <section id="gx-class" className="bg-[#0d3e84] h-[50vh] flex-center">
         <h1 className="title text-white mt-20 text-center">
           Group Exercise class
         </h1>
