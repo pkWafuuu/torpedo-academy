@@ -1,13 +1,16 @@
 "use client";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import logo from "../../public/icons/logo-horizontal-white.png";
 import circleLogo from "../../public/icons/logo-circle.png";
 import burger from "../../public/icons/burger.svg";
 import exit from "../../public/icons/cross.svg";
 import Link from "next/link";
+import chevright from "../../public/icons/chevron-right.svg";
 
 export default function Navbar() {
+  const [open, setOpen] = useState(false);
+
   function openBurger() {
     let burg = document.querySelector(".burger");
     burg?.classList.add("burger--open");
@@ -83,18 +86,63 @@ export default function Navbar() {
                 Home
               </Link>
             </li>
-            <li className="program__nav--link-burger">
-              <Link href="/programs/groupclass" onClick={closeBurger}>
-                Programs
-              </Link>
+            <li
+              className="program__nav--link-burger"
+              onClick={() => setOpen((prev) => !prev)}
+            >
+              PROGRAMS
+              {open && (
+                <ul>
+                  <li className="p-1">
+                    <Link
+                      href="/programs/privateclass"
+                      onClick={closeBurger}
+                      className="flex"
+                    >
+                      <Image src={chevright} objectFit="cover" alt="" />
+                      PRIVATE CLASS
+                    </Link>
+                  </li>
+                  <li className="p-1">
+                  <Link
+                      href="/programs/groupclass"
+                      onClick={closeBurger}
+                      className="flex"
+                    >
+                      <Image src={chevright} objectFit="cover" alt="" />
+                      GROUP CLASS
+                    </Link>
+                  </li>
+                  <li className="p-1">
+                  <Link
+                      href="/programs/babyclass"
+                      onClick={closeBurger}
+                      className="flex"
+                    >
+                      <Image src={chevright} objectFit="cover" alt="" />
+                      BABY CLASS
+                    </Link>
+                  </li>
+                  <li className="p-1">
+                  <Link
+                      href="/programs/gxclass"
+                      onClick={closeBurger}
+                      className="flex"
+                    >
+                      <Image src={chevright} objectFit="cover" alt="" />
+                      GX CLASS
+                    </Link>
+                  </li>
+                </ul>
+              )}
             </li>
             <li className="program__nav--link-burger">
-              <Link href="/programs/babyclass" onClick={closeBurger}>
+              <Link href="/locations" onClick={closeBurger}>
                 Locations
               </Link>
             </li>
             <li className="program__nav--link-burger">
-              <Link href="/programs/gxclass" onClick={closeBurger}>
+              <Link href="/about" onClick={closeBurger}>
                 About Us
               </Link>
             </li>
