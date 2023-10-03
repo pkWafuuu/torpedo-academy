@@ -51,7 +51,7 @@ export default class Location extends Component<LocationProps> {
             </div>
           ))}
         </Slider>
-        <iframe src={loc} width="100%" height="450" loading="lazy" className="rounded mb-8"></iframe>
+        <iframe src={loc} width="100%" height="350" loading="lazy" className="rounded mb-8"></iframe>
       </div>
     );
   }
