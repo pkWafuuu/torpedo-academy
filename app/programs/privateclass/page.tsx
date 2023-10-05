@@ -6,6 +6,7 @@ import megaphone from '../../../public/icons/megaphone.svg'
 import gear from '../../../public/icons/gear.svg'
 import charge from '../../../public/icons/lightning-charge.svg'
 import flexible from '../../../public/icons/arrow-left-right.svg'
+import Link from "next/link";
 
 export default function PrivateClass() {
   return (
@@ -23,7 +24,7 @@ export default function PrivateClass() {
             refine your technique, our classes cater to all ages and skill
             levels.
           </p>
-          <div className="flex flex-wrap">
+          <div className="flex flex-wrap mb-4">
             <ProgramDetail icon={personalize} title='Personalized' para='Our private classes offer one-on-one instruction, ensuring your specific needs and goals are the focus of each session.'/>
             <ProgramDetail icon={flexible} title='Flexible' para='Flexible scheduling options, so you can learn at your own pace, when it&apos;s most convenient for you'/>
             <ProgramDetail icon={charge} title='Fast Progress' para='With private lessons, you&apos;ll notice rapid improvement in your swimming skills.'/>
@@ -31,6 +32,14 @@ export default function PrivateClass() {
             <ProgramDetail icon={megaphone} title='Feedback' para='Receive immediate tailored feedback after each session, helping you track your progress and identify areas for improvement'/>
             <ProgramDetail icon={incognito} title='Private' para='Enjoy the privacy of one-on-one lessons in a tranquil and distraction-free environment, promoting faster learning'/>
           </div>
+          <Link
+            href="https://wa.me/971586671868"
+            target="blank"
+            rel="noopener noreferrer"
+            passHref={true}
+          >
+            <button className="styled__button mt-1">CONTACT US</button>
+          </Link>
         </div>
       </div>
     </>

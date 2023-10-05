@@ -6,6 +6,7 @@ import balloonheart from "../../../public/icons/balloon-heart.svg";
 import shieldcheck from "../../../public/icons/shield-check.svg";
 import personarmsup from "../../../public/icons/person-arms-up.svg";
 import laugh from "../../../public/icons/emoji-laughing.svg";
+import Link from "next/link";
 
 
 export default function BabyClass() {
@@ -22,7 +23,7 @@ export default function BabyClass() {
             environment provides the perfect setting for your baby&apos;s first
             aquatic adventures
           </p>
-          <div className="flex flex-wrap">
+          <div className="flex flex-wrap mb-4">
             <ProgramDetail
               icon={people}
               title="Bonding "
@@ -54,6 +55,14 @@ export default function BabyClass() {
               para="Baby classes provide an opportunity for your little one to interact with other infants, fostering social skills in a fun and relaxed setting"
             />
           </div>
+          <Link
+            href="https://wa.me/971586671868"
+            target="blank"
+            rel="noopener noreferrer"
+            passHref={true}
+          >
+            <button className="styled__button mt-1">CONTACT US</button>
+          </Link>
         </div>
       </div>
     </>

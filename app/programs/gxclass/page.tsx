@@ -6,6 +6,7 @@ import gear from "../../../public/icons/gear.svg";
 import heartpulse from "../../../public/icons/heart-pulse.svg";
 import shield from "../../../public/icons/shield-check.svg";
 import alarm from "../../../public/icons/alarm.svg";
+import Link from "next/link";
 
 export default function GxClass() {
   return (
@@ -22,7 +23,7 @@ export default function GxClass() {
             it&apos;s not just a workout; it&apos;s a water adventure that
             leaves you feeling invigorated and revitalized.
           </p>
-          <div className="flex flex-wrap">
+          <div className="flex flex-wrap mb-4">
             <ProgramDetail
               icon={heartpulse}
               title="Intensity"
@@ -54,6 +55,14 @@ export default function GxClass() {
               para="The low-impact nature of water workouts reduces the risk of injury, making GX Aquatic Classes suitable for individuals of all fitness levels and ages"
             />
           </div>
+          <Link
+            href="https://wa.me/971586671868"
+            target="blank"
+            rel="noopener noreferrer"
+            passHref={true}
+          >
+            <button className="styled__button mt-1">CONTACT US</button>
+          </Link>
         </div>
       </div>
     </>
