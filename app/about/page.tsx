@@ -11,9 +11,9 @@ import Staff from "../ui/Staff";
 export default function page() {
   const staff: { pic: any; name: string; position: string }[] = [
     { pic: kyle, name: "Coach Kyle", position: "Head Coach" },
-    { pic: rey, name: "Coach Rey", position: "Senior Coach" },
-    { pic: abdelrahman, name: "Coach Abu", position: "Swim Coach" },
     { pic: fahim, name: "Coach Fahim ", position: "Swim Coach" },
+    { pic: abdelrahman, name: "Coach Abu", position: "Swim Coach" },
+    { pic: rey, name: "Coach Rey", position: "Senior Coach" },
     { pic: francis, name: "Francis", position: "Lifeguard" },
   ];
 
@@ -46,7 +46,7 @@ export default function page() {
                 </p>
               </div>
             </div>
-            <div className="text-center flex flex-col md:flex-row">
+            <div className="text-center flex flex-col md:flex-row py-6">
               <div className="p-1 md:w-1/2">
                 <div className="h-full p-4 border-[4px] border-[#0d3f84f6] rounded">
                   <h1 className="mb-2">Mission</h1>

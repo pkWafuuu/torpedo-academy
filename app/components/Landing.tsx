@@ -29,7 +29,7 @@ export default function Landing() {
           height={1000}
           width={1000}
           alt=""
-          className="mt-6 md:w-1/2 "
+          className="mt-6 w-[70%] md:w-1/2 "
         />
       </div>
       {/* <div className="ocean">

@@ -64,7 +64,7 @@ export default function Navbar() {
             className="filter__white "
           />
         </button>
-        <div className="burger fixed top-0 right-0 w-full h-[100vh] transition duration-300 ease-in translate-x-[75vh] bg-[#0000008e] md:hidden">
+        <div className=" burger fixed top-0 right-0 w-full h-[100vh] transition duration-300 ease-in translate-x-[75vh] bg-[#0000008e] md:hidden">
           <ul className="fixed top-0 right-0 w-[75%] h-full z-50 bg-white text-[#000]">
             <Image
               src={exit}
