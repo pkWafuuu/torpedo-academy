@@ -18,10 +18,10 @@ export default function Footer() {
               <Link href="/">Home</Link>
             </li>
             <li className="footer__link">
-              <Link href="#programs">Locations</Link>
+              <Link href="/locations">Locations</Link>
             </li>
             <li className="footer__link">
-              <Link href="#programs">About</Link>
+              <Link href="/about">About</Link>
             </li>
           </ul>
           <div className="border-b-[1px] border-[#ffffff41] w-full mb-6" />
@@ -39,7 +39,7 @@ export default function Footer() {
                   </Link>
                 </li>
                 <li className="social-icon--wrapper">
-                  <Link href="/">
+                  <Link href="https://www.instagram.com/torpedoswimacademy/" target="_blank">
                     <Image
                       src={instagram}
                       objectFit="cover"
