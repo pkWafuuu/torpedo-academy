@@ -4,7 +4,6 @@ import about from "../../public/gallery/landing-dots.png";
 import kyle from "../../public/gallery/staff/kyle.png";
 import fahim from "../../public/gallery/staff/fahim.png";
 import abdelrahman from "../../public/gallery/staff/abdelrahman.png";
-import rey from "../../public/gallery/staff/rey.png";
 import francis from "../../public/gallery/staff/francis.png";
 import Staff from "../ui/Staff";
 
@@ -13,7 +12,6 @@ export default function page() {
     { pic: kyle, name: "Coach Kyle", position: "Head Coach" },
     { pic: fahim, name: "Coach Fahim ", position: "Swim Coach" },
     { pic: abdelrahman, name: "Coach Abu", position: "Swim Coach" },
-    { pic: rey, name: "Coach Rey", position: "Senior Coach" },
     { pic: francis, name: "Francis", position: "Lifeguard" },
   ];
 
