@@ -11,7 +11,7 @@ export default function Footer() {
       <div className="row py-14">
         <div className="flex flex-col">
           <div className="mb-6 flex-center">
-              <Image src={logo} objectFit="cover" alt="" className="w-52" />
+            <Image src={logo} objectFit="cover" alt="" className="w-52" />
           </div>
           <ul className="flex-center mb-4">
             <li className="footer__link">
@@ -39,7 +39,12 @@ export default function Footer() {
                   </Link>
                 </li>
                 <li className="social-icon--wrapper">
-                  <Link href="https://www.instagram.com/torpedoswimacademy/" target="_blank">
+                  <Link
+                    href="https://www.instagram.com/torpedoswimacademy/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    passHref={true}
+                  >
                     <Image
                       src={instagram}
                       objectFit="cover"
@@ -50,7 +55,9 @@ export default function Footer() {
                 </li>
               </ul>
             </div>
-            <h2 className="text-center">Copyright © 2022 - 2023 Torpedo Swimming Academy</h2>
+            <h2 className="text-center">
+              Copyright © 2022 - 2023 Torpedo Swimming Academy
+            </h2>
           </div>
         </div>
       </div>
