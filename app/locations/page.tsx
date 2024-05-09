@@ -31,11 +31,11 @@ export default function page() {
       </section>
       <div className="cuscontainer">
         <div className="flex-center flex-col">
-          <Location
+          {/* <Location
             nameLoc="the arbor school"
             imgLoc={arborImgs}
             loc="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.3308477027363!2d55.1340334753761!3d25.02284387782362!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6d32dbc8051f%3A0x7a531e6ff8bbf75d!2sThe%20Arbor%20School!5e0!3m2!1sen!2sae!4v1696330304069!5m2!1sen!2sae"
-          />
+          /> */}
           <Location
             nameLoc="emirates golf club (EGC)"
             imgLoc={egcImgs}
